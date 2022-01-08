@@ -11,9 +11,9 @@
   transition: 100ms;
 }
 .modal {
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
+  width: 290px;
+  min-height: 609px;
+  padding: 40px 20px;
 
   background-color: white;
   border-radius: 4px;
@@ -24,6 +24,15 @@
   transform: scale(1);
   transform: translate(-50%, -50%);
   transition: transform 100ms;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close {
@@ -74,7 +83,7 @@
 
 .modal-form__input {
   padding: 11px 33px;
-  width: 448px;
+  width: 250px;
   min-height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -86,6 +95,12 @@
   &:focus {
     border-color: var(--accent-text-color);
     outline: none;
+  }
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
   }
 }
 
@@ -131,15 +146,20 @@
 
 .modal-form__checkbox {
   display: flex;
+
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: var(--first-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .checkbox__check {
@@ -171,11 +191,14 @@
   display: inline-block;
   margin-left: 5px;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: var(--accent-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .modal__btn {
