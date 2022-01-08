@@ -66,7 +66,7 @@
 
         <!------Мобильное меню------>
         <button class="open-menu-btn" type="button">
-          <svg class="close-menu__icon" width="40" height="40">
+          <svg class="close-menu__icon" width="24" height="16">
             <use href="./images/icons.svg#icon-mob-menu-open"></use>
           </svg>
         </button>
@@ -212,13 +212,22 @@
             <li class="service__item">
               <a class="service__link link" href="#">
                 <div class="service__overley">
-                  <img
-                    class="service_img"
-                    src="./images/img.jpg"
-                    alt="Человек пишет код для сайта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/service/ser-x1-min.jpg 1x,
+                        ./images/service/ser-x2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="service_img"
+                      src="./images/service/ser-x1-min.jpg"
+                      alt="Человек пишет код для сайта"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="service__text">Десктопные приложения</p>
                 </div>
               </a>
@@ -227,13 +236,22 @@
             <li class="service__item">
               <a class="service__link link" href="#">
                 <div class="service__overley">
-                  <img
-                    class="service__img"
-                    src="./images/img1.jpg"
-                    alt="Адаптирует сайт под мобильное устройство"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/service/ser1-x1-min.jpg 1x,
+                        ./images/service/ser1-x2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="service_img"
+                      src="./images/service/ser1-x1-min.jpg"
+                      alt="Человек пишет код для сайта"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="service__text">Мобильные приложения</p>
                 </div>
               </a>
@@ -242,13 +260,22 @@
             <li class="service__item">
               <a class="service__link link" href="#">
                 <div class="service__overley">
-                  <img
-                    class="service__img"
-                    src="./images/img2.jpg"
-                    alt="Выбор цветовой гаммы"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/service/ser2-x1-min.jpg 1x,
+                        ./images/service/ser2-x2-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="service_img"
+                      src="./images/service/ser2-x1-min.jpg"
+                      alt="Человек пишет код для сайта"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="service__text">Дизайнерские решения</p>
                 </div>
               </a>
@@ -286,14 +313,13 @@
                   "
                   media="(min-width: 320px)"
                 />
+                <img
+                  class="team__img"
+                  src="./images/team/team-1x-min.jpg"
+                  alt="Портретное фото мужчины"
+                />
               </picture>
-              <img
-                class="team__img"
-                src="./images/team/team-1x-min.jpg"
-                alt="Портретное фото мужчины"
-                width="270"
-                height="260"
-              />
+
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="social-list list">
@@ -351,14 +377,13 @@
                   "
                   media="(min-width: 320px)"
                 />
+                <img
+                  class="team__img"
+                  src="./images/team/team2-1x-min.jpg"
+                  alt="Портретное фото женщины"
+                />
               </picture>
-              <img
-                class="team__img"
-                src="./images/team/team2-1x-min.jpg"
-                alt="Портретное фото женщины"
-                width="270"
-                height="260"
-              />
+
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="social-list list">
@@ -416,14 +441,13 @@
                   "
                   media="(min-width: 320px)"
                 />
+                <img
+                  class="team__img"
+                  src="./images/team/team3-1x-min.jpg"
+                  alt="Портретное фото мужчины"
+                />
               </picture>
-              <img
-                class="team__img"
-                src="./images/team/team3-1x-min.jpg"
-                alt="Портретное фото мужчины"
-                width="270"
-                height="260"
-              />
+
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="social-list list">
@@ -481,14 +505,13 @@
                   "
                   media="(min-width: 320px)"
                 />
+                <img
+                  class="team__img"
+                  src="./images/team/team4-1x-min.jpg"
+                  alt="Портретное фото мужчины"
+                />
               </picture>
-              <img
-                class="team__img"
-                src="./images/team/team4-1x-min.jpg"
-                alt="Портретное фото мужчины"
-                width="270"
-                height="260"
-              />
+
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="social-list list">
@@ -739,6 +762,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
