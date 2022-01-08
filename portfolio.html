@@ -61,7 +61,73 @@
             >
           </li>
         </ul>
+
+        <!------Мобильное меню------>
+        <button class="open-menu-btn" type="button">
+          <svg class="close-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu-open"></use>
+          </svg>
+        </button>
       </nav>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button class="close-menu-btn" type="button">
+              <svg class="close-menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./index.html"> Студия </a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link current" href="./portfolio.html">
+                  Портфолио
+                </a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="#"> Контакты </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-contact list">
+              <li class="mob-menu-contact__item">
+                <a
+                  class="mob-menu-contact__link--tel link"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contact__item">
+                <a
+                  class="mob-menu-contact__link--mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mob-social-list list">
+              <li class="mob-social-list__item">
+                <a class="mob-social-list__link link" href=""> Instagram </a>
+              </li>
+              <li class="mob-social-list__item">
+                <a class="mob-social-list__link link" href=""> Twitter </a>
+              </li>
+              <li class="mob-social-list__item">
+                <a class="mob-social-list__link link" href=""> Facebook </a>
+              </li>
+              <li class="mob-social-list__item">
+                <a class="mob-social-list__link link" href=""> Linkedin </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Галлерея-->
@@ -91,9 +157,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery-x1.jpg 1x,
+                        ./images/gallery/gallery-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img7.jpg"
+                    src="./images/gallery/gallery-mob-x1-min.jpg"
                     alt="сайт"
                     width="370"
                     height="294"
@@ -114,9 +203,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery1-x1.jpg 1x,
+                        ./images/gallery/gallery1-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery1-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery1-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery1-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery1-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img8.jpg"
+                    src="./images/gallery/gallery1-mob-x1-min.jpg"
                     alt="постер"
                     width="370"
                     height="294"
@@ -137,9 +249,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery2-x1.jpg 1x,
+                        ./images/gallery/gallery2-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery2-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery2-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery2-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery2-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img9.jpg"
+                    src="./images/gallery/gallery2-mob-x1-min.jpg"
                     alt="логотип"
                     width="370"
                     height="294"
@@ -160,9 +295,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery3-x1.jpg 1x,
+                        ./images/gallery/gallery3-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery3-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery3-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery3-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery3-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img10.jpg"
+                    src="./images/gallery/gallery3-mob-x1-min.jpg"
                     alt="наушники"
                     width="370"
                     height="294"
@@ -183,9 +341,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery4-x1.jpg 1x,
+                        ./images/gallery/gallery4-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery4-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery4-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery4-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery4-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img11.jpg"
+                    src="./images/gallery/gallery4-mob-x1-min.jpg"
                     alt="коробки"
                     width="370"
                     height="294"
@@ -206,9 +387,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery5-x1.jpg 1x,
+                        ./images/gallery/gallery5-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery5-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery5-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery5-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery5-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img12.jpg"
+                    src="./images/gallery/gallery5-mob-x1-min.jpg"
                     alt="сайт"
                     width="370"
                     height="294"
@@ -229,9 +433,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery6-x1.jpg 1x,
+                        ./images/gallery/gallery6-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery6-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery6-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery6-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery6-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img13.jpg"
+                    src="./images/gallery/gallery6-mob-x1-min.jpg"
                     alt="журнал"
                     width="370"
                     height="294"
@@ -252,9 +479,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery7-x1.jpg 1x,
+                        ./images/gallery/gallery7-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery7-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery7-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery7-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery7-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img14.jpg"
+                    src="./images/gallery/gallery7-mob-x1-min.jpg"
                     alt="лейбл"
                     width="370"
                     height="294"
@@ -275,9 +525,32 @@
             <li class="cards__item">
               <a class="cards__link link" href="">
                 <div class="cards__wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/gallery8-x1.jpg 1x,
+                        ./images/gallery/gallery8-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery8-tab-x1-min.jpg 1x,
+                        ./images/gallery/gallery8-tab-x2-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery8-mob-x1-min.jpg 1x,
+                        ./images/gallery/gallery8-mob-x2-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                  </picture>
                   <img
                     class="cards__img"
-                    src="./images/img15.jpg"
+                    src="./images/gallery/gallery8-mob-x1-min.jpg"
                     alt="ноутбук"
                     width="370"
                     height="294"
@@ -377,5 +650,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
